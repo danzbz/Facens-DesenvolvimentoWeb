@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-12 text-center">
+        <h1>Criar produto</h1>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-8 text-center card border rounded bg-primary">
+        <div class="row p-3 justify-content-center">
+            <form action="/produtos/create" method="POST">
+                <div class="col-12 align-items-center">
+                    <label for="nome">Nome do produto:</label>
+                    <input type="text" name="nome" placeholder="Digite o nome do produto">
+                </div>
+                <div class="col-12">
+                    <label for="valor">Preço do produto:</label>
+                    <input type="text" name="valor" placeholder="Digite o preço">
+                </div>
+                <div class="col-12">
+                    <label for="descricao">Descrição do produto:</label>
+                    <textarea name="descricao" placeholder="Descrição do produto"></textarea>
+                </div>
+                <div class="col-12">
+                    <label for="imagem">Imagem:</label>
+                    <input type="text" name="imagem" placeholder="Insira a URL da imagem" />
+                </div>
+                <input type="submit" class="btn-success" value="Enviar">
+            </form>
+        </div>
+    </div>
+</div>
