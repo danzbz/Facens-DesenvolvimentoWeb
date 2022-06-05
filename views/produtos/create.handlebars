@@ -1,29 +1,29 @@
 <div class="row">
-    <div class="col-12 text-center">
+    <div class="col-12 text-center text-white">
         <h1>Criar produto</h1>
     </div>
 </div>
-<div class="row justify-content-center">
-    <div class="col-8 text-center card border rounded bg-primary">
-        <div class="row p-3 justify-content-center">
-            <form action="/produtos/create" method="POST">
-                <div class="col-12 align-items-center">
-                    <label for="nome">Nome do produto:</label>
-                    <input type="text" name="nome" placeholder="Digite o nome do produto">
+<div class="card border rounded bg-purple">
+    <div class="col-8">
+        <div class="row p-5 ">
+            <form action="/produtos/create" method="POST" class="width=" 80%"">
+                <div class="col-12 mt-3 ">
+                    <input type="text" name="nome" placeholder="Digite o nome do produto" class="form-control">
                 </div>
-                <div class="col-12">
-                    <label for="valor">Preço do produto:</label>
-                    <input type="text" name="valor" placeholder="Digite o preço">
+                <div class="col-12 mt-3">
+                    <textarea name="descricao" placeholder="Descrição do produto" class="form-control"></textarea>
                 </div>
-                <div class="col-12">
-                    <label for="descricao">Descrição do produto:</label>
-                    <textarea name="descricao" placeholder="Descrição do produto"></textarea>
+                <div class="col-12 mt-3 ">
+                    <label for="valor" class="form-label font-weight-bold">Valor</label>
+                    <input type="text" name="valor" placeholder="Digite o preço" class="form-control">
                 </div>
-                <div class="col-12">
-                    <label for="imagem">Imagem:</label>
-                    <input type="text" name="imagem" placeholder="Insira a URL da imagem" />
+                <div class="col-12 mt-3">
+                    <label for="imagem" class="form-label font-weight-bold text-start">Fotos</label>
+                    <input type="text" name="imagem" placeholder="Insira a URL da imagem" class="form-control" />
                 </div>
-                <input type="submit" class="btn-success" value="Enviar">
+                <div class="col-12 mt-3 text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </form>
         </div>
     </div>
