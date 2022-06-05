@@ -1,15 +1,29 @@
-
-<div class="produtos">
-  {{#each produtos}}
-  <div class="produto">
-    <img src="{{this.imagem}}" alt="{{this.nome}}">
-    <h3>{{this.nome}}</h3>
-    <p>R${{this.valor}}</p>
-    <div class="actions">
-      <a href="/produtos/{{this._id}}" class="btnPrin">Detalhes</a>
-      <a href="/produtos/edit/{{this._id}}" class="btnPrin">Editar</a>
+<div class="row align-items-center pt-4 card border rounded p-2 bg-purple pb-1">
+  <div class="col-12 text-center text-white pb-2">
+    <h1 class="title">Projetos de inovação</h1>
+  </div>
+  <div class="col-md-12 text-center">
+    <p>Visando a transformação digital nos mais diversos ramos da sociedade, a (nome da empresa) incentiva projetos de
+      inovação técnologicas.
+    </p>
+    <p class="text-center mt-4"><a href="/inovacoes/create/" class="btn btn-warning">Cadastrar Proejeto de Inovação</a>
+    </p>
+  </div>
+</div>
+<div class="row mt-3">
+  {{#each inovacoes}}
+  <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="{{this.imagem}}" alt="{{this.titulo}}" class="card-img-top" style="height: 330px">
+      <div class="card-body">
+        <h5 class="card-title">{{this.titulo}}</h5>
+          <a href="/inovacoes/{{this._id}}" class="btn btn-outline-success btn-sm">Detalhes</a>
+          <a href="/inovacoes/edit/{{this._id}}" class="btn btn-outline-primary btn-sm">Editar</a>
+          <form action="/inovacoes/remove/{{this._id}}" class="d-inline" method="POST">
+            <input type="submit" class="btn btn-outline-danger btn-sm" value="Excluir">
+          </form>
+      </div>
     </div>
   </div>
   {{/each}}
-</div>
 </div>

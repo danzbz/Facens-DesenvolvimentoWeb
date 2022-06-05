@@ -11,11 +11,13 @@ module.exports = class InovacaoController {
   }
 
   static async createInovacaoPost(req, res) {
-    const nome = req.body.nome
-    const valor = req.body.valor
+    const titulo = req.body.titulo
+    const subtitulo = req.body.subtitulo
+    const autor = req.body.autor
+    const email = req.body.email
     const descricao = req.body.descricao
     const imagem = req.body.imagem
-    const inovacao = new Inovacao({ nome, valor, descricao, imagem })
+    const inovacao = new Inovacao({ titulo, subtitulo, autor, email, descricao , imagem })
     await inovacao.save()
     res.redirect('/inovacoes')
   }

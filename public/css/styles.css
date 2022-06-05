@@ -6,13 +6,17 @@ body {
   font-family: "Open Sans", sans-serif !important; /* Apliquei ela*/
 }
 
-
 .title {
   font-family: 'Trocchi', serif;
   font-size: 45px;
   font-weight: normal;
   line-height: 48px;
   margin: 0;
+}
+
+.title-card {
+  font-family: 'Trocchi', serif;
+  font-size: 22px;
 }
 
 p {
@@ -79,4 +83,8 @@ h3{
   text-decoration: none;
   color: black;
   font-size: 15px;
+}
+
+.btn-warning {
+  font-weight: bold !important;
 }
