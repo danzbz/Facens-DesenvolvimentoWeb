@@ -5,7 +5,6 @@ const produtosRoutes = require('./routes/produtosRoutes')
 const homeRoutes = require('./routes/homeRoutes')
 const inovacoesRoutes = require('./routes/inovacoesRoutes')
 
-//app.engine('handlebars', exphbs())
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 app.use(  express.urlencoded({ extended: true }),)

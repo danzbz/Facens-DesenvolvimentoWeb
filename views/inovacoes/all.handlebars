@@ -6,8 +6,7 @@
     <p>Visando a transformação digital nos mais diversos ramos da sociedade, a (nome da empresa) incentiva projetos de
       inovação técnologicas.
     </p>
-    <p class="text-center mt-4"><a href="/inovacoes/create/" class="btn btn-warning">Cadastrar Projeto de Inovação</a>
-    </p>
+    <a href="/inovacoes/create/" class="btn btn-warning">Cadastrar Projeto de Inovação</a>
   </div>
 </div>
 <div class="row mt-3">
@@ -17,11 +16,11 @@
       <img src="{{this.imagem}}" alt="{{this.titulo}}" class="card-img-top" style="height: 330px">
       <div class="card-body">
         <h5 class="card-title">{{this.titulo}}</h5>
-          <a href="/inovacoes/{{this._id}}" class="btn btn-outline-success btn-sm">Detalhes</a>
-          <a href="/inovacoes/edit/{{this._id}}" class="btn btn-outline-primary btn-sm">Editar</a>
-          <form action="/inovacoes/remove/{{this._id}}" class="d-inline" method="POST">
-            <input type="submit" class="btn btn-outline-danger btn-sm" value="Excluir">
-          </form>
+        <a href="/inovacoes/{{this._id}}" class="btn btn-outline-success btn-sm">Detalhes</a>
+        <a href="/inovacoes/edit/{{this._id}}" class="btn btn-outline-primary btn-sm">Editar</a>
+        <form action="/inovacoes/remove/{{this._id}}" class="d-inline" method="POST">
+          <input type="submit" class="btn btn-outline-danger btn-sm" value="Excluir">
+        </form>
       </div>
     </div>
   </div>
