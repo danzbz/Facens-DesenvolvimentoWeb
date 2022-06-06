@@ -9,25 +9,25 @@
             <div class="form-row">
                 <div class="col-md-9 col-sm-12 mt-3">
                     <label for="nome" class="form-label font-weight-bold text-warning">Nome do Produto</label>
-                    <input type="text" name="nome" placeholder="Digite o nome do produto" class="form-control">
+                    <input type="text" name="nome" placeholder="Digite o nome do produto" required class="form-control">
                 </div>
                 <div class="col-md-3 col-sm-12 mt-3">
                     <label for="valor" class="form-label font-weight-bold text-warning">Valor</label>
                     <div class="input-group-prepend">
                         <div class="input-group-text">R$ </div>
-                        <input type="text" name="valor" placeholder="Digite o preço" class="form-control">
+                        <input type="text" name="valor" placeholder="Digite o preço" required class="form-control">
                     </div>
 
                 </div>
             </div>
             <div class="mt-3">
                 <label for="descricao" class="form-label font-weight-bold text-warning">Descrição</label>
-                <textarea name="descricao" placeholder="Descrição do produto" class="form-control"></textarea>
+                <textarea name="descricao" placeholder="Descrição do produto" required class="form-control"></textarea>
             </div>
 
             <div class=" mt-3">
                 <label for="imagem" class="form-label font-weight-bold text-warning">Foto</label>
-                <input type="text" name="imagem" placeholder="Insira a URL da imagem" class="form-control" />
+                <input type="text" name="imagem" required placeholder="Insira a URL da imagem" class="form-control" />
             </div>
             <div class="col-12 mt-3 text-center">
                 <a href="/produtos/" class="btn btn-warning text-white font-weight-normal">Voltar</a>
