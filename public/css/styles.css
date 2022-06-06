@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans'); /*Importei fonte open sans*/
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans'); /*Importei fonte open sans*/
 
 body {
   background-color: rgb(147, 112, 219) !important;
@@ -87,4 +87,16 @@ h3{
 
 .btn-warning {
   font-weight: bold !important;
+} 
+
+.bg-card { 
+  background-color: #bcc4e3 !important;
+}
+
+.cor-texto {
+  color: #f9fbfb;
+}
+
+.cor-texto-titulo-card { 
+  color: #337b91;
 }
