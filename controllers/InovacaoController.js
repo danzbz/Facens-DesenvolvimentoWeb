@@ -42,11 +42,13 @@ module.exports = class InovacaoController {
 
   static async editInovacaoPost(req, res) {
     const id = req.body.id
-    const nome = req.body.nome
-    const valor = req.body.valor
+    const titulo = req.body.titulo
+    const subtitulo = req.body.subtitulo
+    const autor = req.body.autor
+    const email = req.body.email
     const descricao = req.body.descricao
     const imagem = req.body.imagem
-    const inovacao = { nome, valor, descricao, imagem }
+    const inovacao = ({ titulo, subtitulo, autor, email, descricao , imagem })
     await Inovacao.updateOne({ _id: id }, inovacao)
     res.redirect('/inovacoes')
   }

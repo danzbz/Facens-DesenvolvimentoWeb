@@ -4,7 +4,7 @@ const InovacaoController = require('../controllers/InovacaoController')
 
 router.post('/edit', InovacaoController.editInovacaoPost)
 router.get('/', InovacaoController.showInovacao)
-router.get('/produtos', InovacaoController.showInovacao)
+router.get('/inovacoes', InovacaoController.showInovacao)
 router.get('/create', InovacaoController.createInovacao)
 router.post('/create', InovacaoController.createInovacaoPost)
 router.get('/:id', InovacaoController.getInovacao)

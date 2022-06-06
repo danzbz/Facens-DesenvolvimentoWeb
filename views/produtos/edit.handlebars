@@ -6,7 +6,8 @@
 
 <div class="card border rounded bg-purple">
     <div class="p-5 justify-content-center">
-        <form action="/produtos/edit" method="POST">
+        <form action="/produtos/edit/" method="POST">
+            <input type="hidden" name="id" value={{produto._id}}>
             <div class="form-row">
                 <div class="col-md-9 col-sm-12 mt-3">
                     <label for="nome" class="form-label font-weight-bold text-warning">Nome do Produto</label>
@@ -34,7 +35,8 @@
                     class="form-control" />
             </div>
             <div class="col-12 mt-3 text-center">
-                <button type="submit" class="btn btn-warning ">Enviar</button>
+                <a href="/produtos/" class="btn btn-warning text-white font-weight-normal">Voltar</a>
+                <button type="submit" class="btn btn-success ">Cadastrar</button>
             </div>
         </form>
     </div>
